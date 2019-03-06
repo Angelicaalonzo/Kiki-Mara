@@ -2,26 +2,27 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import ReactMapboxGl, { Layer, Feature } from 'react-mapbox-gl'; 
 import './App.css';
+import Email from './Components/Email';
+
+const EmailInput = (props) => {
+  const onEmailChange = (event) => {
+    var email = event.target.value;
+
+    this.props.onEmailChange(email);
+  }
+}
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      
+     <div className ="app">
+     <header className = "App-header">
+     </header>
+      
+     {/* <Email onEmailChange={this.onEmailChange}/> */}ç
+     </div>
+  
     );
   }
 }
