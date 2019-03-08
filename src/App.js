@@ -38,8 +38,8 @@ class App extends Component {
     const here_api_url      = "https://places.cit.api.here.com/places/v1/autosuggest?";
     const here_api_at       = `at=${this.state.lat},${this.state.lng}&`;
     const here_api_q        = "q=pizza&";
-    const here_api_app_id   = `app_id=${process.env.REACT_APP_HERE_API_APP_ID}&`;
-    const here_api_app_code = `app_code=${process.env.REACT_APP_HERE_API_APP_CODE}`;
+    const here_api_app_id   = `app_id=${process.env.IQ1BlBrHpqIkHXrEYfxa}&`;
+    const here_api_app_code = `app_code=${process.env.wCMXljrQfsflssv2t7wQg }`;
 
     //the built-in fetch API will make the REST/AJAX call for us: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch    
     fetch(here_api_url + here_api_at + here_api_q + here_api_app_id + here_api_app_code)
